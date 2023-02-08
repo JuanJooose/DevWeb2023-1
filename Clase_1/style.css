@@ -1,0 +1,73 @@
+/* Globales  */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Header */
+
+.contenedor {
+    /*Código de Css2
+    max-width: 120rem;
+    width: 90%;
+    */
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    color: black;
+    font-size: 1.4pc;
+    padding: 1px;
+
+}
+
+
+.barra {
+    padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--cBlanco);
+}
+
+
+
+.header {
+    background-color: rgb(89, 222, 177);
+}
