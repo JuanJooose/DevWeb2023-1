@@ -1,0 +1,43 @@
+.container {
+    background-color: aqua;
+    max-width: 80%;
+    padding: 10px 10px;
+}
+
+.container li {
+    list-style-type: none;
+}
+
+.flex-outer>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-outer li {
+    margin-bottom: 20px;
+}
+
+.flex-inner label, {
+    flex-basis: 80px;
+    
+}
+
+.flex-inner input {
+    flex: 1;
+}
+
+.flex-outer label {
+    padding-right: 40px;
+
+}
+
+.flex-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-inner li {
+    flex: 0 0 calc(20% - 10px);
+}
