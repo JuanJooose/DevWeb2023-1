@@ -72,3 +72,87 @@ darValor(Clientes);
 Clientes.forEach(c => {
     console.log(c)
 });
+
+
+
+
+let Sumar = (number) => { return number + 5 }
+
+let f = Sumar;
+
+
+console.log("\n");
+// Callback functions 
+
+
+// se trata de enviarle como parametro de entrada a una función otra función
+
+const esPar = (number) => {
+    return number % 2 === 0;
+}
+
+console.log("Function con callback");
+const ValidarParidad = (num, callback) => {
+    const esPAR = callback(num);
+    console.log(`¿El número es entero? ${esPAR}\n\n`)
+}
+
+
+ValidarParidad(4, esPar);
+
+
+
+const valores = [1, 2, 3, 4, 5, 10, 20, 40];
+let arreglo = [1, 2, 3, 4, 5, 10, 20, 40, 50];
+
+
+const SumaValores = valores.reduce((acumulador, valorActual) => {
+    return acumulador + valorActual;
+});
+
+
+console.log("Reduce\n\n" + SumaValores);
+
+
+/* Foreach */
+
+console.log("\nForeach\n\n")
+const fnDos = arreglo.forEach(number => {
+    console.log(number);
+});
+
+
+console.log("\nFilter\n\n");
+const fnTres = arreglo.filter(number => {
+    return number > 10;
+});
+console.log(fnTres);
+
+
+console.log("\nMap\n\n");
+const fnCuatro = arreglo.map(number => {
+    return `Jugador ${number} Se ha unido.`;
+});
+console.log(fnCuatro);
+
+
+
+
+
+/* Tarea */
+
+let Persona = (nombre, edad) = {
+    Nombre: nombre,
+    Edad: edad
+}
+
+listaPersonas = [Persona(juan, 18)]
+
+
+const fnTry = listaPersonas.forEach(n => { return n.Nombre + " " + n.Edad });
+
+
+console.log(fnTry);
+
+
+
