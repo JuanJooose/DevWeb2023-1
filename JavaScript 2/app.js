@@ -144,12 +144,20 @@ let Estudiante1 = new Estudiante(`Juan José Gil`, 19, 1018222, `Pascual bravo`)
 
 console.log(Estudiante1.verInformacion());
 
-
+ // Punto #3
 console.log(`\n\nPunto #3`);
 
-const UsoObjetoYClase = (function1, function2) => {
-    return `${function1}\n${function2} `;
+const UsoObjetoYClase = () => {
+
+   let bakiJuanma = new Estudiante(`Juan Manuel`,19,1321,`Pascual Bravo`);
+
+   let objectGustos = {
+    deporte: "Basket",
+    comida: "Hamburguesa",
+    carro: "mustang gt"
+   }
+
+    return `El estudiante: ${bakiJuanma.verInformacion()}\n\nTienes estos gustos\n ${objectGustos.carro}\n${objectGustos.deporte}\n${objectGustos.comida} `;
 }
 
-console.log(`Objeto y Clase\n ${UsoObjetoYClase(Carro.VerTodaInformación(),Estudiante1.verInformacion())}`);
-
+console.log(`Objeto y Clase\n ${UsoObjetoYClase()}`);
