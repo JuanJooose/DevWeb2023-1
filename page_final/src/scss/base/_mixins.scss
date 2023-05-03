@@ -1,0 +1,71 @@
+@use "_variables" as v;
+
+
+// un mixin me ayuda a crear una función pasando parámetros o atributos.
+
+
+
+// MediaQueries
+
+@mixin lit-phone {
+    @media (min-width: v.$lit-phone) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (min-width: v.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktopXL) {
+        @content;
+    }
+}
+
+@mixin grid-c($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin grid-r($rows, $gap) {
+    display: grid;
+    grid-template-rows: repeat($rows, 1fr);
+    gap: $gap;
+}
+
+@mixin resetear-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin boton-dec ($color, $colorb) {
+    background-color: $colorb;
+    color: $color;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: v.$fuente_principal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: none;
+}

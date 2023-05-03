@@ -1,0 +1,59 @@
+@use "_variables" as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+
+    &.body-scroll { // Para que no se vea un salto cuando aparece el header-fijo, le pongo el mismo tamaño del header
+        padding-top: 8.6rem;
+    }
+}
+
+
+.contenedor {
+    width: 95%;
+    max-width: 130rem;
+    margin: 1.3rem auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fuente-blanca {
+    p{
+        color: v.$blanco;
+    }
+}
+
+.alinear-text{
+    text-align: center;
+}
