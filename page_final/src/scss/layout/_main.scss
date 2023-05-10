@@ -1,5 +1,43 @@
 @use "../base/variables" as v;
 
-.separador {
-    background-color: v.$rosa;
+main {
+    font-family: v.$fuente_principal;
 }
+
+.separador {
+    background-color: v.$azulClaro;
+    color: v.$azulClaro;
+    padding: 1.5rem;
+}
+
+.section-image-text {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgb(0, 0, 0, .5);
+    color: v.$blanco;
+    
+}
+
+.section-image {
+    background-image: url(../../../assets/images/image-main2.jpg);
+    background-position: center; // centrar la imagen al completo
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+}
+
+.text-header-widgets {
+    text-align: center;
+}
+
+.widgetss {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+

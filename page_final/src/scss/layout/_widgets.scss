@@ -1,0 +1,16 @@
+.contenedor-imagen {
+    -webkit-box-shadow: -1px 2px 36px 6px rgba(158, 155, 158, 1);
+    -moz-box-shadow: -1px 2px 36px 6px rgb(179, 177, 179);
+    box-shadow: -1px 2px 36px 6px rgb(171, 171, 171);
+    border-radius: 1rem;
+}
+
+.contenedor-imagen:hover {
+    -webkit-box-shadow: -1px 2px 36px 6px rgb(133, 133, 133);
+    -moz-box-shadow: -1px 2px 36px 6px rgb(132, 132, 132);
+    box-shadow: -1px 2px 36px 6px rgb(139, 138, 138);
+}
+
+.contenedor-imagen-informacion {
+    padding: .2rem;
+}

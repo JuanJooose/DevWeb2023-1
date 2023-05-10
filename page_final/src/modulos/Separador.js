@@ -3,7 +3,7 @@ import "./build/css/app.css"
 const Separador = () => {
     return (
         <section className="separador">
-            <span></span>
+            <span>a</span>
         </section>
     );
 }
