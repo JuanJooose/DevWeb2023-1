@@ -1,7 +1,7 @@
 import "./build/css/app.css"
-import { useState } from "react";
 import Images from "../assets/Images"
-
+import React, { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 
 const Widget = (props) => {
     const [lugar] = useState(props.lugar);
@@ -10,14 +10,17 @@ const Widget = (props) => {
     return (
         <div className="contenedor">
             <div className="contenedor-imagen">
-                <div className="image-casa">
-                    <img src={Images['img' + img]}></img>
-                </div>
+                    <div className="image-casa">
+                        <img src={Images['img' + img]}></img>
+                    </div>
                 <div className="contenedor contenedor-imagen-informacion">
                     <h2>{lugar}</h2>
                     <p>
-                        {infoLugar} 
+                        {infoLugar}
                     </p>
+                    {/* <Link to={'/InfoCasas'}>
+                       <a>mas:::</a>
+                    </Link> */}
                 </div>
 
             </div>
