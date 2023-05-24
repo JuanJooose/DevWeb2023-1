@@ -7,6 +7,7 @@ const Widget = (props) => {
     const [lugar] = useState(props.lugar);
     const [infoLugar] = useState(props.infoLugar);
     const [img] = useState(props.img);
+    const [valor] = useState(props.valor);
     return (
         <div className="contenedor">
             <div className="contenedor-imagen">
@@ -16,16 +17,20 @@ const Widget = (props) => {
                 <div className="contenedor contenedor-imagen-informacion">
                     <h2>{lugar}</h2>
                     <p>
-                        {infoLugar}
+                      {infoLugar}
                     </p>
-                    {/* <Link to={'/InfoCasas'}>
-                       <a>mas:::</a>
-                    </Link> */}
+                    <h2>
+                        {valor}
+                    </h2>
                 </div>
 
             </div>
         </div>
     );
 }
+
+/*{ <Link to={'/InfoCasas'}>
+                       <a>mas:::</a>
+                    </Link> }*/
 
 export default Widget

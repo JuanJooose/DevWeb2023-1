@@ -26,7 +26,7 @@ const Main = () => {
                 </h2>
                 <div className="widgetss">
                     {Casa.map(x => {
-                        return <Widget lugar={x.lugar} infoLugar={x.informacion} img={x.id} />
+                        return <Widget lugar={x.lugar} infoLugar={x.informacion} img={x.id} valor={x.valor} />
                     })}
                 </div>
             </section>
